@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thesis Group Alignment Meeting</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Updated to the latest stable FontAwesome for the remaining decorative icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
@@ -28,45 +29,312 @@
 </head>
 <body class="flex flex-col items-center justify-center p-4">
 
+    <!-- Main Presentation Container -->
     <div class="relative w-full max-w-5xl h-[85vh] glass-panel rounded-3xl overflow-hidden flex flex-col">
         
+        <!-- Header -->
         <div class="h-16 bg-white border-b border-gray-100 flex items-center justify-between px-6 shadow-sm z-10">
             <div class="flex items-center space-x-2 text-indigo-600 font-semibold">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
+                <!-- Inline SVG for Brain Icon to ensure it loads -->
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
                 <span>Psychology Thesis Team</span>
             </div>
             <button id="toggleNotesBtn" class="text-sm bg-indigo-50 text-indigo-600 hover:bg-indigo-100 px-4 py-2 rounded-full font-medium transition-colors flex items-center">
-                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
                 <span id="toggleNotesText">Toggle Speaker Notes</span>
             </button>
         </div>
 
+        <!-- Slides Container -->
         <div id="slides-container" class="flex-grow relative overflow-hidden">
             
-            <!-- (ALL YOUR SLIDES REMAIN EXACTLY THE SAME — omitted here for brevity in explanation, but kept intact below) -->
-
-            <!-- Slide 1 -->
+            <!-- Slide 1: Title -->
             <div class="slide absolute inset-0 flex flex-col justify-center items-center p-12 text-center opacity-100 z-10">
+                <div class="w-24 h-24 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600 mb-6 shadow-inner">
+                    <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                </div>
                 <h1 class="text-5xl font-bold text-gray-800 mb-4">Thesis Group Alignment Meeting</h1>
                 <p class="text-xl text-gray-500 max-w-2xl mb-8">Practices, Challenges, and Adaptations in Technology-Mediated Life Coaching</p>
+                <div class="bg-indigo-50 px-6 py-3 rounded-full text-indigo-700 font-medium flex items-center">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path></svg>
+                    Facilitator / Project Lead
+                </div>
+                
+                <!-- Speaker Notes -->
                 <div class="speaker-notes hidden absolute bottom-4 left-1/2 transform -translate-x-1/2 w-11/12 bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded shadow-lg text-left text-sm text-gray-700">
-                    <strong>Script:</strong> "Hello guys!"
+                    <strong>Script:</strong> "Hello guys! Let's start our quick alignment meeting para makapag-move forward na tayo sa Chapter 3 natin."
                 </div>
             </div>
 
-            <!-- (KEEP ALL OTHER SLIDES EXACTLY AS YOU HAD THEM) -->
+            <!-- Slide 2: Agenda -->
+            <div class="slide absolute inset-0 flex flex-col justify-center p-16 opacity-0 pointer-events-none">
+                <h2 class="text-4xl font-bold text-gray-800 mb-10 border-b-4 border-indigo-200 pb-4 inline-block">Meeting Agenda</h2>
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex items-start space-x-4">
+                        <div class="bg-blue-100 text-blue-600 p-3 rounded-lg"><i class="fas fa-file-audio text-xl"></i></div>
+                        <div>
+                            <h3 class="font-semibold text-lg text-gray-800">1. Transcripts Status</h3>
+                            <p class="text-gray-500 text-sm mt-1">Checking completion of R1-R4.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex items-start space-x-4">
+                        <div class="bg-purple-100 text-purple-600 p-3 rounded-lg"><i class="fas fa-pen-nib text-xl"></i></div>
+                        <div>
+                            <h3 class="font-semibold text-lg text-gray-800">2. Pending Revisions</h3>
+                            <p class="text-gray-500 text-sm mt-1">Chapters 1 & 2 past tense updates.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex items-start space-x-4">
+                        <div class="bg-green-100 text-green-600 p-3 rounded-lg"><i class="fas fa-layer-group text-xl"></i></div>
+                        <div>
+                            <h3 class="font-semibold text-lg text-gray-800">3. Introducing Chapter 3</h3>
+                            <p class="text-gray-500 text-sm mt-1">Results & Colaizzi's Method Template.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex items-start space-x-4">
+                        <div class="bg-orange-100 text-orange-600 p-3 rounded-lg"><i class="fas fa-forward text-xl"></i></div>
+                        <div>
+                            <h3 class="font-semibold text-lg text-gray-800">4. Looking Ahead: Chapter 4</h3>
+                            <p class="text-gray-500 text-sm mt-1">Connecting themes to discussion.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Speaker Notes -->
+                <div class="speaker-notes hidden absolute bottom-4 left-1/2 transform -translate-x-1/2 w-11/12 bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded shadow-lg text-left text-sm text-gray-700">
+                    <strong>Script:</strong> "Ito yung apat na pag-uusapan natin today. Mabilis lang 'to, I just want to make sure aligned tayong lahat sa mga next steps."
+                </div>
+            </div>
+
+            <!-- Slide 3: Transcripts -->
+            <div class="slide absolute inset-0 flex flex-col justify-center p-16 opacity-0 pointer-events-none">
+                <div class="flex items-center space-x-4 mb-8">
+                    <div class="bg-blue-100 text-blue-600 p-4 rounded-xl text-2xl"><i class="fas fa-tasks"></i></div>
+                    <div>
+                        <h2 class="text-4xl font-bold text-gray-800">Status Check: Transcripts</h2>
+                        <p class="text-gray-500">Goal: Know exactly when we hit 100% to start data analysis.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
+                    <ul class="space-y-4">
+                        <li class="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
+                            <span class="font-semibold text-gray-700"><i class="fas fa-user-circle text-gray-400 mr-2"></i> Sophie (R3 - Raphael)</span>
+                            <span class="px-4 py-1 bg-yellow-100 text-yellow-700 rounded-full text-sm font-medium">Finishing tomorrow (+30m cross-check)</span>
+                        </li>
+                        <li class="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
+                            <span class="font-semibold text-gray-700"><i class="fas fa-user-circle text-gray-400 mr-2"></i> Arielle (R2)</span>
+                            <span class="px-4 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">Done! (Blank spaces are normal)</span>
+                        </li>
+                        <li class="flex items-center justify-between p-4 bg-gray-50 rounded-lg border border-red-100">
+                            <span class="font-semibold text-gray-700"><i class="fas fa-user-circle text-gray-400 mr-2"></i> Agnes (R1) & Jette (R4)</span>
+                            <span class="px-4 py-1 bg-red-50 text-red-600 rounded-full text-sm font-medium animate-pulse">Pending Update</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Speaker Notes -->
+                <div class="speaker-notes hidden absolute bottom-4 left-1/2 transform -translate-x-1/2 w-11/12 bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded shadow-lg text-left text-sm text-gray-700">
+                    <strong>Script:</strong> "Alright guys, let's do a quick status check sa transcripts natin para alam natin kailan tayo makakapag-start sa data analysis. Sophie: Noted sa update mo na matatapos mo bukas kay R3 including the 30-minute cross-checking. Thank you! Arielle: Done na ito. By the way guys, if you see blank spaces sa transcript ni R2, don't worry about it. Normal lang 'yan kasi may mga questions na hindi na naitanong. Agnes & Jette: How are we doing sa parts niyo? Kailan natin ma-e-expect na ma-finalize?"
+                </div>
+            </div>
+
+            <!-- Slide 4: Revisions & Assign Button -->
+            <div class="slide absolute inset-0 flex flex-col justify-center p-16 opacity-0 pointer-events-none">
+                <div class="flex items-center space-x-4 mb-8">
+                    <div class="bg-purple-100 text-purple-600 p-4 rounded-xl text-2xl"><i class="fas fa-edit"></i></div>
+                    <div>
+                        <h2 class="text-4xl font-bold text-gray-800">Revisions: Chapters 1 & 2</h2>
+                        <p class="text-gray-500">Goal: Fix verb tenses based on Professor's feedback.</p>
+                    </div>
+                </div>
+                <div class="flex space-x-6">
+                    <div class="flex-1 bg-indigo-50 rounded-2xl p-8 border border-indigo-100">
+                        <h3 class="text-xl font-bold text-indigo-800 mb-4 flex items-center">
+                            <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            The Issue
+                        </h3>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            Our paper is still written in the <strong>future tense</strong> (proposal phase). It needs to be in the <strong>past tense</strong> (manuscript phase).
+                        </p>
+                        <div class="bg-white p-4 rounded-lg shadow-sm">
+                            <p class="text-red-500 line-through mb-2">"The researchers will conduct..."</p>
+                            <p class="text-green-600 font-medium flex items-center">
+                                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                                "The researchers conducted..."
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex-1 bg-white rounded-2xl p-8 border border-gray-200 shadow-sm flex flex-col justify-center items-center text-center">
+                        <div class="text-4xl text-gray-300 mb-4"><i class="fas fa-user-plus"></i></div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Needs Volunteer</h3>
+                        <p class="text-gray-500 mb-4">"Data Collection" section onwards in Chapter 2 hasn't been changed yet.</p>
+                        
+                        <!-- Interactive Button -->
+                        <button id="assignBtn" class="bg-indigo-600 text-white px-6 py-2 rounded-full font-medium hover:bg-indigo-700 transition transform hover:scale-105 active:scale-95 shadow-md flex items-center">
+                            Assign Now
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Speaker Notes -->
+                <div class="speaker-notes hidden absolute bottom-4 left-1/2 transform -translate-x-1/2 w-11/12 bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded shadow-lg text-left text-sm text-gray-700">
+                    <strong>Script:</strong> "Next agenda: 'Yung comment ni Sir na i-change into past tense 'yung Chapters 1 and 2. Nag-ask ako kanina, and the 'Data Collection' section onwards in Chapter 2 hasn't been changed to past tense yet. Sino pwede mag-take charge nito? Mabilis lang ito, we just need to change words like 'will conduct' to 'conducted'. Let's set a reminder to finish this before we submit the final manuscript."
+                </div>
+            </div>
+
+            <!-- Slide 5: Chapter 3 Intro -->
+            <div class="slide absolute inset-0 flex flex-col justify-center p-16 opacity-0 pointer-events-none">
+                <div class="flex items-center space-x-4 mb-8">
+                    <div class="bg-green-100 text-green-600 p-4 rounded-xl text-2xl"><i class="fas fa-book-open"></i></div>
+                    <div>
+                        <h2 class="text-4xl font-bold text-gray-800">Introducing Chapter 3 (Results)</h2>
+                        <p class="text-gray-500">Methodology: Colaizzi's 7-Step Phenomenological Method</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 mb-6">
+                    <div class="flex items-center justify-around">
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-gray-50 rounded-full flex items-center justify-center text-gray-600 text-2xl mx-auto mb-3 border-2 border-gray-200"><i class="fas fa-file-alt"></i></div>
+                            <p class="font-medium text-gray-700">1. Read Transcripts</p>
+                        </div>
+                        <div class="text-gray-300">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center text-blue-600 text-2xl mx-auto mb-3 border-2 border-blue-200"><i class="fas fa-quote-left"></i></div>
+                            <p class="font-medium text-gray-700">2. Extract Quotes</p>
+                        </div>
+                        <div class="text-gray-300">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-green-50 rounded-full flex items-center justify-center text-green-600 text-2xl mx-auto mb-3 border-2 border-green-200"><i class="fas fa-layer-group"></i></div>
+                            <p class="font-medium text-gray-700">3. Clusters of Themes</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-blue-50 border-l-4 border-blue-500 p-4 rounded text-blue-800 flex items-center">
+                    <i class="fas fa-lightbulb text-yellow-500 mr-2"></i> 
+                    <span><strong>Reminder:</strong> Since we are qualitative, we have NO numbers or statistics here. Just themes and narratives!</span>
+                </div>
+                
+                <!-- Speaker Notes -->
+                <div class="speaker-notes hidden absolute bottom-4 left-1/2 transform -translate-x-1/2 w-11/12 bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded shadow-lg text-left text-sm text-gray-700">
+                    <strong>Script:</strong> "Now for the exciting part—Chapter 3! Ito 'yung 'Results' chapter natin. Since qualitative phenomenological paper tayo, wala tayong numbers or statistics dito. Ang gagawin natin is Colaizzi's Method. Ibig sabihin, babasahin natin 'yung transcripts, kukuha tayo ng significant statements (quotes), and igro-group natin sila into Clusters of Themes."
+                </div>
+            </div>
+
+            <!-- Slide 6: Template -->
+            <div class="slide absolute inset-0 flex flex-col justify-center p-16 opacity-0 pointer-events-none">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">Our Chapter 3 APA 7 Template</h2>
+                <div class="grid grid-cols-5 gap-4">
+                    <div class="col-span-2 bg-gray-800 text-white p-6 rounded-xl text-sm font-mono overflow-hidden relative shadow-lg">
+                        <div class="opacity-50 text-xs mb-2">// File Structure</div>
+                        <div class="text-green-400">1. Participant Profiles</div>
+                        <div class="ml-4 text-gray-400">(Pseudonyms only)</div>
+                        <div class="text-green-400 mt-2">2. Clusters of Themes</div>
+                        <div class="ml-4 text-gray-400">- Theme Name</div>
+                        <div class="ml-4 text-gray-400">- Verbatim Quotes</div>
+                        <div class="ml-4 text-gray-400">- Our Explanation</div>
+                        <div class="text-green-400 mt-2">3. Exhaustive Description</div>
+                        <div class="ml-4 text-gray-400">(Weaving the story)</div>
+                        <div class="text-green-400 mt-2">4. Fundamental Structure</div>
+                        <div class="ml-4 text-gray-400">(The core essence)</div>
+                        <div class="text-green-400 mt-2">5. Validation of Findings</div>
+                    </div>
+                    <div class="col-span-3 flex flex-col justify-center space-y-4 pl-4">
+                        <div class="bg-white p-4 rounded-xl border-l-4 border-indigo-500 shadow-sm">
+                            <h4 class="font-bold text-gray-800">Ready to use!</h4>
+                            <p class="text-sm text-gray-600">I have an APA 7 template ready. We just plug our themes and quotes into the designated sections.</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl border-l-4 border-green-500 shadow-sm">
+                            <h4 class="font-bold text-gray-800">Clear Guidelines</h4>
+                            <p class="text-sm text-gray-600">Ensures we don't miss any of Colaizzi's crucial steps (like the Fundamental Structure at the end).</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Speaker Notes -->
+                <div class="speaker-notes hidden absolute bottom-4 left-1/2 transform -translate-x-1/2 w-11/12 bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded shadow-lg text-left text-sm text-gray-700">
+                    <strong>Script:</strong> "I actually found a standard APA 7 template that fits perfectly with our Colaizzi 7-step method. As you can see, maglalagay lang tayo ng themes tapos susuportahan natin ng direct quotes galing sa transcripts natin. Tapos sa dulo, gagawa tayo ng 'Exhaustive Description' and 'Fundamental Structure'. What do you guys think of this template? Okay ba sa inyo na ito 'yung sundin natin?"
+                </div>
+            </div>
+
+            <!-- Slide 7: Chapter 4 -->
+            <div class="slide absolute inset-0 flex flex-col justify-center p-16 opacity-0 pointer-events-none">
+                <div class="flex items-center space-x-4 mb-8">
+                    <div class="bg-orange-100 text-orange-600 p-4 rounded-xl text-2xl"><i class="fas fa-glasses"></i></div>
+                    <div>
+                        <h2 class="text-4xl font-bold text-gray-800">Looking Ahead: Chapter 4</h2>
+                        <p class="text-gray-500">Understanding the difference between Results and Discussion</p>
+                    </div>
+                </div>
+                <div class="flex space-x-6">
+                    <div class="flex-1 bg-white border border-gray-200 rounded-2xl p-6 shadow-sm text-center">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Chapter 3 (Results)</h3>
+                        <div class="inline-block bg-gray-100 px-4 py-1 rounded-full text-sm text-gray-600 mb-4 font-semibold">"What did they say?"</div>
+                        <p class="text-gray-600 text-sm">Presenting the raw themes and quotes directly from the coaches.</p>
+                    </div>
+                    <div class="flex items-center text-gray-300">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </div>
+                    <div class="flex-1 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-2xl p-6 shadow-lg text-center text-white">
+                        <h3 class="text-xl font-bold mb-2">Chapter 4 (Discussion)</h3>
+                        <div class="inline-block bg-white/20 px-4 py-1 rounded-full text-sm mb-4 font-semibold">"Why did they say it?"</div>
+                        <p class="text-indigo-100 text-sm">Connecting our themes back to Chapter 1 (RRL) & Theoretical Framework (Hatano & Inagaki, Jenny Rogers).</p>
+                    </div>
+                </div>
+                
+                <!-- Speaker Notes -->
+                <div class="speaker-notes hidden absolute bottom-4 left-1/2 transform -translate-x-1/2 w-11/12 bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded shadow-lg text-left text-sm text-gray-700">
+                    <strong>Script:</strong> "Lastly, just to give everyone a heads-up sa susunod na mangyayari: Once done na tayo sa Chapter 3, we will move to Chapter 4 (Discussion). Kung sa Chapter 3 ipapakita lang natin 'yung results (mga sinabi ng coaches), sa Chapter 4 natin ipapaliwanag kung BAKIT nila sinabi 'yun. Dito natin iko-connect 'yung themes natin pabalik sa Chapter 1 RRL at Theoretical Framework natin."
+                </div>
+            </div>
+
+            <!-- Slide 8: Next Steps -->
+            <div class="slide absolute inset-0 flex flex-col justify-center items-center text-center p-16 opacity-0 pointer-events-none">
+                <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center text-green-600 text-3xl mb-6 shadow-inner">
+                    <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                </div>
+                <h2 class="text-4xl font-bold text-gray-800 mb-8">Next Steps & Alignment</h2>
+                <div class="w-full max-w-lg bg-white rounded-2xl p-6 shadow-sm border border-gray-100 text-left">
+                    <div class="flex items-center mb-4">
+                        <input type="checkbox" checked class="w-5 h-5 text-indigo-600 rounded mr-3">
+                        <span class="text-lg text-gray-800 font-medium">Top Priority: Finish all transcriptions</span>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <input type="checkbox" class="w-5 h-5 text-indigo-600 rounded mr-3">
+                        <span class="text-lg text-gray-800">Read transcripts to highlight quotes</span>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="checkbox" class="w-5 h-5 text-indigo-600 rounded mr-3">
+                        <span class="text-lg text-gray-800">Start grouping "Clusters of Themes"</span>
+                    </div>
+                </div>
+                <h3 class="text-xl text-gray-600 mt-8 font-medium">Are we all aligned? Let's get this done! 🚀</h3>
+                
+                <!-- Speaker Notes -->
+                <div class="speaker-notes hidden absolute bottom-4 left-1/2 transform -translate-x-1/2 w-11/12 bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded shadow-lg text-left text-sm text-gray-700">
+                    <strong>Script:</strong> "But for now, focus muna tayo sa pag-finish ng transcripts para makapag-extract na tayo ng themes for Chapter 3. Are we all aligned? May mga questions ba kayo?"
+                </div>
+            </div>
 
         </div>
 
+        <!-- Footer / Navigation -->
         <div class="h-16 bg-gray-50 border-t border-gray-200 flex items-center justify-between px-6 z-10">
             <button id="prevBtn" class="text-gray-500 hover:text-indigo-600 font-medium transition flex items-center">
+                <!-- Inline SVG Left Arrow -->
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
                 Previous
             </button>
             <div id="slideCounter" class="text-gray-500 font-semibold tracking-wider text-sm">
                 1 / 8
             </div>
             <button id="nextBtn" class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-2 rounded-full font-medium transition shadow-sm flex items-center">
-                Next
+                Next 
+                <!-- Inline SVG Right Arrow -->
+                <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
             </button>
         </div>
     </div>
@@ -95,7 +363,6 @@
                     }
                 });
                 
-                // ✅ FIXED LINE
                 counter.innerText = `${currentSlide + 1} / ${slides.length}`;
                 
                 prevBtn.style.opacity = currentSlide === 0 ? '0.3' : '1';
@@ -119,6 +386,7 @@
                 }
             });
 
+            // Keyboard navigation
             document.addEventListener('keydown', (e) => {
                 if (e.key === 'ArrowRight' || e.key === 'Space') {
                     if (currentSlide < slides.length - 1) {
@@ -133,6 +401,7 @@
                 }
             });
 
+            // Toggle Speaker Notes
             toggleNotesBtn.addEventListener('click', () => {
                 notesVisible = !notesVisible;
                 speakerNotes.forEach(note => {
@@ -154,6 +423,7 @@
                 }
             });
 
+            // Assign Button Interaction (Slide 4)
             const assignBtn = document.getElementById('assignBtn');
             if(assignBtn) {
                 assignBtn.addEventListener('click', () => {
@@ -169,6 +439,7 @@
                 });
             }
 
+            // Initialize
             updateSlides();
         });
     </script>
